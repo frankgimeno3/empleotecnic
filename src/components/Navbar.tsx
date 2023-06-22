@@ -20,9 +20,8 @@ async function Navbar() {
             </>
           ) : (
             <>
- 
- <li className="bg-opacity-25 text-white rounded-full py-2 px-4 border-2 hover:bg-white hover:text-cyan-950  hover:cursor-pointer">
-                <Link href="/">Login</Link>
+              <li className="bg-opacity-25 text-white rounded-full py-2 px-4 border-2 hover:bg-white hover:text-cyan-950  hover:cursor-pointer">
+                <Link href="/login">Login</Link>
               </li>
               <li className="bg-opacity-25 text-white rounded-full py-2 px-4 border-2 hover:bg-white hover:text-cyan-950  hover:cursor-pointer">
                 <Link href="/register">Register</Link>
