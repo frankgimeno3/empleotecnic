@@ -4,7 +4,7 @@ import { AxiosError } from "axios";
 import { signIn } from "next-auth/react";
 import { useRouter } from "next/navigation";
 
-function Signin() {
+function Login() {
   const [error, setError] = useState("");
   const router = useRouter();
 
@@ -29,7 +29,7 @@ function Signin() {
         className="bg-neutral-950 px-8 py-10 w-3/12"
       >
         {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
-        <h1 className="text-4xl font-bold mb-7">Signin</h1>
+        <h1 className="text-4xl font-bold mb-7">Iniciar Sesión</h1>
 
         <label className="text-slate-300">Email:</label>
         <input
@@ -39,7 +39,7 @@ function Signin() {
           name="email"
         />
 
-        <label className="text-slate-300">Password:</label>
+        <label className="text-slate-300">Contraseña:</label>
         <input
           type="password"
           placeholder="Password"
@@ -55,4 +55,4 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default Login;
