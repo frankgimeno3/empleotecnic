@@ -46,11 +46,11 @@ function Signup() {
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
         <div className="bg-gray-800 bg-opacity-60 backdrop-filter backdrop-blur-lg w-50vw  pt-10 pb-10 mt-20 ">
           <div className="flex flex-col items-center  p-24">
-      <form onSubmit={handleSubmit} className="bg-neutral-950 px-8 py-10 w-3/12">
+      <form onSubmit={handleSubmit} >
         {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
-        <h1 className="text-4xl font-bold mb-7">Crear Cuenta</h1>
+        <h1 className="text-4xl font-bold mb-7 text-white">Crear Cuenta</h1>
 
-        <label className="text-slate-300">Nombre completo:</label>
+        <label className="text-slate-300 mb-4">Nombre completo:</label>
         <input
           type="text"
           placeholder="Fullname"
@@ -58,7 +58,7 @@ function Signup() {
           name="fullname"
         />
 
-        <label className="text-slate-300">Email:</label>
+        <label className="text-slate-300 mb-4">Email:</label>
         <input
           type="email"
           placeholder="Email"
@@ -66,7 +66,7 @@ function Signup() {
           name="email"
         />
 
-        <label className="text-slate-300">Contraseña:</label>
+        <label className="text-slate-300 mb-4">Contraseña:</label>
         <input
           type="password"
           placeholder="Password"
@@ -75,7 +75,7 @@ function Signup() {
         />
 
         <button className="bg-blue-500 text-white px-4 py-2 block w-full mt-4">
-          Signup (Register)
+          Crear Cuenta
         </button>
       </form>
       </div>
