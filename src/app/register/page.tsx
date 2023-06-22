@@ -35,12 +35,22 @@ function Signup() {
   };
 
   return (
-    <div className="justify-center h-[calc(100vh-4rem)] flex items-center">
+    <div className="relative w-full h-screen">
+      <video
+        className="absolute top-0 left-0 object-cover w-screen h-screen"
+        src="/video/perfiles.mp4"
+        autoPlay
+        loop
+        muted
+      ></video>
+      <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
+        <div className="bg-gray-800 bg-opacity-60 backdrop-filter backdrop-blur-lg w-50vw  pt-10 pb-10 mt-20 ">
+          <div className="flex flex-col items-center  p-24">
       <form onSubmit={handleSubmit} className="bg-neutral-950 px-8 py-10 w-3/12">
         {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
-        <h1 className="text-4xl font-bold mb-7">Signup</h1>
+        <h1 className="text-4xl font-bold mb-7">Crear Cuenta</h1>
 
-        <label className="text-slate-300">Fullname:</label>
+        <label className="text-slate-300">Nombre completo:</label>
         <input
           type="text"
           placeholder="Fullname"
@@ -56,7 +66,7 @@ function Signup() {
           name="email"
         />
 
-        <label className="text-slate-300">Password:</label>
+        <label className="text-slate-300">Contraseña:</label>
         <input
           type="password"
           placeholder="Password"
@@ -68,7 +78,10 @@ function Signup() {
           Signup (Register)
         </button>
       </form>
-    </div>
+      </div>
+      </div>
+      </div>
+      </div>
   );
 }
 
